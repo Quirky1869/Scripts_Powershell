@@ -4,7 +4,7 @@ $PC = Read-Host "Entrez nom PC"
 
 $printer = "Server Name"
 
-$printer += Read-Host "Entrez le nom de l'imprimante a ajouter".ToUpper().Replace('a','A')
+$printer += Read-Host "Enter a printer's name to add".ToUpper().Replace('a','A')
 
 Write-Host $printer
 
