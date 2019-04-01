@@ -1,5 +1,3 @@
-﻿#1..254 | ForEach-Object {Test-Connection -ComputerName "192.168.100.$_" -Count 1 -ErrorAction SilentlyContinue}
-
 $destination = (Get-ChildItem Env:\USERPROFILE).value + "\Rangeip.csv"
 Write-Host " Enter the three first octet for check : " -NoNewline -ForegroundColor White -BackgroundColor Black
 
