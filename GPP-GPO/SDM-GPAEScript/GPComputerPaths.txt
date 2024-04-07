@@ -1,0 +1,302 @@
+Computer Configuration
+Computer Configuration/Administrative Templates
+Computer Configuration/Administrative Templates/System
+Computer Configuration/Administrative Templates/System/Credentials Delegation
+Computer Configuration/Administrative Templates/System/Distributed COM
+Computer Configuration/Administrative Templates/System/Distributed COM/Application Compatibility Settings
+Computer Configuration/Administrative Templates/System/Device Installation
+Computer Configuration/Administrative Templates/System/Device Installation/Device Installation Restrictions
+Computer Configuration/Administrative Templates/System/Driver Installation
+Computer Configuration/Administrative Templates/System/Device Redirection
+Computer Configuration/Administrative Templates/System/Device Redirection/Device Redirection Restrictions
+Computer Configuration/Administrative Templates/System/Disk NV Cache
+Computer Configuration/Administrative Templates/System/Disk Quotas
+Computer Configuration/Administrative Templates/System/Enhanced Storage Access
+Computer Configuration/Administrative Templates/System/Filesystem
+Computer Configuration/Administrative Templates/System/Filesystem/NTFS
+Computer Configuration/Administrative Templates/System/Folder Redirection
+Computer Configuration/Administrative Templates/System/Locale Services
+Computer Configuration/Administrative Templates/System/Group Policy
+Computer Configuration/Administrative Templates/System/Windows HotStart
+Computer Configuration/Administrative Templates/System/iSCSI
+Computer Configuration/Administrative Templates/System/iSCSI/iSCSI Target Discovery
+Computer Configuration/Administrative Templates/System/iSCSI/General iSCSI
+Computer Configuration/Administrative Templates/System/iSCSI/iSCSI Security
+Computer Configuration/Administrative Templates/System/Kerberos
+Computer Configuration/Administrative Templates/System/Logon
+Computer Configuration/Administrative Templates/System/Net Logon
+Computer Configuration/Administrative Templates/System/Net Logon/DC Locator DNS Records
+Computer Configuration/Administrative Templates/System/Performance Control Panel
+Computer Configuration/Administrative Templates/System/Power Management
+Computer Configuration/Administrative Templates/System/Power Management/Notification Settings
+Computer Configuration/Administrative Templates/System/Power Management/Button Settings
+Computer Configuration/Administrative Templates/System/Power Management/Hard Disk Settings
+Computer Configuration/Administrative Templates/System/Power Management/Sleep Settings
+Computer Configuration/Administrative Templates/System/Power Management/Video and Display Settings
+Computer Configuration/Administrative Templates/System/Recovery
+Computer Configuration/Administrative Templates/System/Remote Assistance
+Computer Configuration/Administrative Templates/System/Removable Storage Access
+Computer Configuration/Administrative Templates/System/Remote Procedure Call
+Computer Configuration/Administrative Templates/System/Scripts
+Computer Configuration/Administrative Templates/System/System Restore
+Computer Configuration/Administrative Templates/System/Trusted Platform Module Services
+Computer Configuration/Administrative Templates/System/User Profiles
+Computer Configuration/Administrative Templates/System/Windows Time Service
+Computer Configuration/Administrative Templates/System/Windows Time Service/Time Providers
+Computer Configuration/Administrative Templates/System/Internet Communication Management
+Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Disk Diagnostic
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Corrupted File Recovery
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Fault Tolerant Heap
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Memory Leak Diagnosis
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/MSI Corrupted File Recovery
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Application Compatibility Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Boot Performance Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Standby/Resume Performance Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows System Responsiveness Performance Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Shutdown Performance Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Performance PerfTrack
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Windows Resource Exhaustion Detection and Resolution
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Scripted Diagnostics
+Computer Configuration/Administrative Templates/System/Troubleshooting and Diagnostics/Scheduled Maintenance
+Computer Configuration/Administrative Templates/System/Windows File Protection
+Computer Configuration/Administrative Templates/System/Shutdown Options
+Computer Configuration/Administrative Templates/Windows Components
+Computer Configuration/Administrative Templates/Windows Components/ActiveX Installer Service
+Computer Configuration/Administrative Templates/Windows Components/Application Compatibility
+Computer Configuration/Administrative Templates/Windows Components/AutoPlay Policies
+Computer Configuration/Administrative Templates/Windows Components/Biometrics
+Computer Configuration/Administrative Templates/Windows Components/Windows Customer Experience Improvement Program
+Computer Configuration/Administrative Templates/Windows Components/NetMeeting
+Computer Configuration/Administrative Templates/Windows Components/Credential User Interface
+Computer Configuration/Administrative Templates/Windows Components/Digital Locker
+Computer Configuration/Administrative Templates/Windows Components/Desktop Window Manager
+Computer Configuration/Administrative Templates/Windows Components/Desktop Window Manager/Window Frame Coloring
+Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting
+Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Advanced Error Reporting Settings
+Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent
+Computer Configuration/Administrative Templates/Windows Components/Event Forwarding
+Computer Configuration/Administrative Templates/Windows Components/Event Log Service
+Computer Configuration/Administrative Templates/Windows Components/Event Log Service/Application
+Computer Configuration/Administrative Templates/Windows Components/Event Log Service/Security
+Computer Configuration/Administrative Templates/Windows Components/Event Log Service/Setup
+Computer Configuration/Administrative Templates/Windows Components/Event Log Service/System
+Computer Configuration/Administrative Templates/Windows Components/Event Viewer
+Computer Configuration/Administrative Templates/Windows Components/Game Explorer
+Computer Configuration/Administrative Templates/Windows Components/Online Assistance
+Computer Configuration/Administrative Templates/Windows Components/Internet Information Services
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Application Compatibility
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Application Compatibility/Enable cut, copy or paste operations from the clipboard if URLACTION_SCRIPT_PASTE is set to Prompt
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Corporate Settings
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Corporate Settings/Code Download
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Delete Browsing History
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Advanced Page
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Advanced settings
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Advanced settings/Multimedia
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Advanced settings/Searching
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/AutoComplete
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Component Updates
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Component Updates/Help Menu > About Internet Explorer
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Internet Settings/Component Updates/Periodic check for updates to Internet Explorer and Internet Tools
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Browser menus
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Add-on Management
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/AJAX
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Binary Behavior Security Restriction
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Consistent Mime Handling
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Notification bar
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Local Machine Zone Lockdown Security
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Mime Sniffing Safety Feature
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/MK Protocol Security Restriction
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Network Protocol Lockdown
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Network Protocol Lockdown/Restricted Protocols Per Security Zone
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Object Caching Protection
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Protection From Zone Elevation
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Restrict ActiveX Install
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Restrict File Download
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Security Features/Scripted Window Security Restrictions
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Toolbars
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Privacy
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Accelerators
+Computer Configuration/Administrative Templates/Windows Components/Internet Explorer/Compatibility View
+Computer Configuration/Administrative Templates/Windows Components/RSS Feeds
+Computer Configuration/Administrative Templates/Windows Components/Windows Media Center
+Computer Configuration/Administrative Templates/Windows Components/Windows Mobility Center
+Computer Configuration/Administrative Templates/Windows Components/Presentation Settings
+Computer Configuration/Administrative Templates/Windows Components/Windows Installer
+Computer Configuration/Administrative Templates/Windows Components/Network Projector
+Computer Configuration/Administrative Templates/Windows Components/Parental Controls
+Computer Configuration/Administrative Templates/Windows Components/Windows PowerShell
+Computer Configuration/Administrative Templates/Windows Components/Windows Reliability Analysis
+Computer Configuration/Administrative Templates/Windows Components/Search
+Computer Configuration/Administrative Templates/Windows Components/Security Center
+Computer Configuration/Administrative Templates/Windows Components/Location and Sensors
+Computer Configuration/Administrative Templates/Windows Components/HomeGroup
+Computer Configuration/Administrative Templates/Windows Components/Desktop Gadgets
+Computer Configuration/Administrative Templates/Windows Components/Windows SideShow
+Computer Configuration/Administrative Templates/Windows Components/Smart Card
+Computer Configuration/Administrative Templates/Windows Components/Sound Recorder
+Computer Configuration/Administrative Templates/Windows Components/Windows System Resource Manager
+Computer Configuration/Administrative Templates/Windows Components/Task Scheduler
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Printer Redirection
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Licensing
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Session Time Limits
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Profiles
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Temporary folders
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/Remote Session Environment
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Session Host/RD Connection Broker
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/Remote Desktop Connection Client
+Computer Configuration/Administrative Templates/Windows Components/Remote Desktop Services/RD Licensing
+Computer Configuration/Administrative Templates/Windows Components/Backup
+Computer Configuration/Administrative Templates/Windows Components/Backup/Client
+Computer Configuration/Administrative Templates/Windows Components/Backup/Server
+Computer Configuration/Administrative Templates/Windows Components/BitLocker Drive Encryption
+Computer Configuration/Administrative Templates/Windows Components/BitLocker Drive Encryption/Operating System Drives
+Computer Configuration/Administrative Templates/Windows Components/BitLocker Drive Encryption/Fixed Data Drives
+Computer Configuration/Administrative Templates/Windows Components/BitLocker Drive Encryption/Removable Data Drives
+Computer Configuration/Administrative Templates/Windows Components/Windows Calendar
+Computer Configuration/Administrative Templates/Windows Components/Windows Explorer
+Computer Configuration/Administrative Templates/Windows Components/Windows Explorer/Previous Versions
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Handwriting personalization
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Tablet PC Pen Training
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Input Panel
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Accessories
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Cursors
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Hardware Buttons
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Pen Flicks Learning
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Pen UX Behaviors
+Computer Configuration/Administrative Templates/Windows Components/Tablet PC/Touch Input
+Computer Configuration/Administrative Templates/Windows Components/Windows Anytime Upgrade
+Computer Configuration/Administrative Templates/Windows Components/Windows Color System
+Computer Configuration/Administrative Templates/Windows Components/Windows Defender
+Computer Configuration/Administrative Templates/Windows Components/Windows Mail
+Computer Configuration/Administrative Templates/Windows Components/Windows Media Digital Rights Management
+Computer Configuration/Administrative Templates/Windows Components/Windows Media Player
+Computer Configuration/Administrative Templates/Windows Components/Windows Messenger
+Computer Configuration/Administrative Templates/Windows Components/Windows Remote Management (WinRM)
+Computer Configuration/Administrative Templates/Windows Components/Windows Remote Management (WinRM)/WinRM Client
+Computer Configuration/Administrative Templates/Windows Components/Windows Remote Management (WinRM)/WinRM Service
+Computer Configuration/Administrative Templates/Windows Components/Windows Remote Shell
+Computer Configuration/Administrative Templates/Windows Components/Windows Update
+Computer Configuration/Administrative Templates/Windows Components/Shutdown Options
+Computer Configuration/Administrative Templates/Windows Components/Windows Logon Options
+Computer Configuration/Administrative Templates/Network
+Computer Configuration/Administrative Templates/Network/Background Intelligent Transfer Service (BITS)
+Computer Configuration/Administrative Templates/Network/SSL Configuration Settings
+Computer Configuration/Administrative Templates/Network/DNS Client
+Computer Configuration/Administrative Templates/Network/Lanman Server
+Computer Configuration/Administrative Templates/Network/Link-Layer Topology Discovery
+Computer Configuration/Administrative Templates/Network/Network Connectivity Status Indicator
+Computer Configuration/Administrative Templates/Network/Network Connections
+Computer Configuration/Administrative Templates/Network/Offline Files
+Computer Configuration/Administrative Templates/Network/Microsoft Peer-to-Peer Networking Services
+Computer Configuration/Administrative Templates/Network/Microsoft Peer-to-Peer Networking Services/Peer Name Resolution Protocol
+Computer Configuration/Administrative Templates/Network/Microsoft Peer-to-Peer Networking Services/Peer Name Resolution Protocol/Global Clouds
+Computer Configuration/Administrative Templates/Network/Microsoft Peer-to-Peer Networking Services/Peer Name Resolution Protocol/Link-Local Clouds
+Computer Configuration/Administrative Templates/Network/Microsoft Peer-to-Peer Networking Services/Peer Name Resolution Protocol/Site-Local Clouds
+Computer Configuration/Administrative Templates/Network/BranchCache
+Computer Configuration/Administrative Templates/Network/QoS Packet Scheduler
+Computer Configuration/Administrative Templates/Network/QoS Packet Scheduler/DSCP value of conforming packets
+Computer Configuration/Administrative Templates/Network/QoS Packet Scheduler/DSCP value of non-conforming packets
+Computer Configuration/Administrative Templates/Network/QoS Packet Scheduler/Layer-2 priority value
+Computer Configuration/Administrative Templates/Network/SNMP
+Computer Configuration/Administrative Templates/Network/TCPIP Settings
+Computer Configuration/Administrative Templates/Network/TCPIP Settings/IPv6 Transition Technologies
+Computer Configuration/Administrative Templates/Network/TCPIP Settings/Parameters
+Computer Configuration/Administrative Templates/Network/Windows Connect Now
+Computer Configuration/Administrative Templates/Printers
+Computer Configuration/Administrative Templates/Control Panel
+Computer Configuration/Administrative Templates/Control Panel/User Accounts
+Computer Configuration/Administrative Templates/Control Panel/Regional and Language Options
+Computer Configuration/Preferences
+Computer Configuration/Preferences/Windows Settings
+Computer Configuration/Preferences/Windows Settings/Network Shares
+Computer Configuration/Preferences/Windows Settings/Environment
+Computer Configuration/Preferences/Windows Settings/Files
+Computer Configuration/Preferences/Windows Settings/Folders
+Computer Configuration/Preferences/Windows Settings/Ini Files
+Computer Configuration/Preferences/Windows Settings/Registry
+Computer Configuration/Preferences/Windows Settings/Shortcuts
+Computer Configuration/Preferences/Control Panel Settings
+Computer Configuration/Preferences/Control Panel Settings/Local Users and Groups
+Computer Configuration/Preferences/Control Panel Settings/Local Users and Groups/Local User
+Computer Configuration/Preferences/Control Panel Settings/Local Users and Groups/Local Group
+Computer Configuration/Preferences/Control Panel Settings/Services
+Computer Configuration/Preferences/Control Panel Settings/Data Sources
+Computer Configuration/Preferences/Control Panel Settings/Devices
+Computer Configuration/Preferences/Control Panel Settings/Folder Options
+Computer Configuration/Preferences/Control Panel Settings/Folder Options/Folder Options (Windows XP)
+Computer Configuration/Preferences/Control Panel Settings/Folder Options/Folder Options (Windows Vista)
+Computer Configuration/Preferences/Control Panel Settings/Folder Options/Open with
+Computer Configuration/Preferences/Control Panel Settings/Network Options
+Computer Configuration/Preferences/Control Panel Settings/Network Options/VPN Connection
+Computer Configuration/Preferences/Control Panel Settings/Network Options/DUN Connection
+Computer Configuration/Preferences/Control Panel Settings/Power options
+Computer Configuration/Preferences/Control Panel Settings/Power options/Power options (Windows XP)
+Computer Configuration/Preferences/Control Panel Settings/Power options/Power scheme (Windows XP)
+Computer Configuration/Preferences/Control Panel Settings/Printers
+Computer Configuration/Preferences/Control Panel Settings/Printers/TCP-IP printer
+Computer Configuration/Preferences/Control Panel Settings/Printers/Local printer
+Computer Configuration/Preferences/Control Panel Settings/Scheduled tasks
+Computer Configuration/Preferences/Control Panel Settings/Scheduled tasks/Scheduled task
+Computer Configuration/Preferences/Control Panel Settings/Scheduled tasks/Immediate task (Windows XP)
+Computer Configuration/Software Settings
+Computer Configuration/Software Settings/Software installation
+Computer Configuration/Windows Settings
+Computer Configuration/Windows Settings/Deployed Printers
+Computer Configuration/Windows Settings/Scripts
+Computer Configuration/Windows Settings/Security Settings
+Computer Configuration/Windows Settings/Security Settings/Account Policies
+Computer Configuration/Windows Settings/Security Settings/Account Policies/Kerberos Policy
+Computer Configuration/Windows Settings/Security Settings/Account Policies/Password Policy
+Computer Configuration/Windows Settings/Security Settings/Account Policies/Account Lockout Policy
+Computer Configuration/Windows Settings/Security Settings/Event Log
+Computer Configuration/Windows Settings/Security Settings/File System
+Computer Configuration/Windows Settings/Security Settings/Local Policies
+Computer Configuration/Windows Settings/Security Settings/Local Policies/Audit Policy
+Computer Configuration/Windows Settings/Security Settings/Local Policies/Security Options
+Computer Configuration/Windows Settings/Security Settings/Local Policies/User Rights Assignment
+Computer Configuration/Windows Settings/Security Settings/Registry
+Computer Configuration/Windows Settings/Security Settings/Restricted Groups
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies/Security Levels
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies/Additional Rules Path
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies/Additional Rules Network
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies/Additional Rules Hash
+Computer Configuration/Windows Settings/Security Settings/Software Restriction Policies/Additional Rules Cert
+Computer Configuration/Windows Settings/Security Settings/System Services
+Computer Configuration/Windows Settings/Security Settings/Wired Network
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Account Logon
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Account Management
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Detailed Tracking
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/DS Access
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Logon`/Logoff
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Object Access
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Policy Change
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/Privilege Use
+Computer Configuration/Windows Settings/Security Settings/Advanced Audit Policy Configuration/Audit Policies/System

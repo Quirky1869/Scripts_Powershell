@@ -1,0 +1,142 @@
+TOPIC
+    about_gpae_sdk
+
+SHORT DESCRIPTION
+    Describes how to use the Group Policy Automation Engine PowerShell SDK.
+
+LONG DESCRIPTION
+    The Group Policy Automation Engine PowerShell SDK is a module designed to 
+    work with the GPAE (Group Policy Automation Engine) from SDM Software. The
+    GPAE allows Group Policy administrators programmatic access to their 
+    Group Policy environment.
+    
+    This SDK is a collection of PowerShell functions that you can use in your
+    own scripting efforts to manage Group Policies. You can use the commands to
+    retrieve policy settings. You can use these commands to define or change
+    GPO settings. While you can use the commands interactively from a
+    PowerShell prompt it is anticipated you will be using them from a script or
+    your own advanced functions. In fact, you are encouraged to use the source
+    code for the functions in this module as additional tools for your own
+    efforts.
+    
+    This module is not intended for daily GPO management, but rather as an aid
+    so that you can build the daily GPO management tools that you require.
+    
+REQUIREMENTS
+    This SDK has been tested with PowerShell 2.0 running under Windows 7. You
+    must also install the SDM GPO Automation module. This module, SDM-GroupPolicy
+    is required to be loaded in your current PowerShell session in order to use any of the
+    commands in this module. 
+    
+    Remember that any tools that you build from the SDK will most likely also
+    need the SDM Group Policy module to be installed on any computer where you
+    intend to run them.
+    
+SDK VARIABLES
+    When you import the GPAE module, several global variables are also defined.
+    You can use these variables to discover programmatic information you may
+    need.
+    
+    The variable $sdmType contains the raw GPO SDK classes. These are the core
+    .NET classes.
+    
+    PS C:\> $ifm=$sdmtype | where {$_.name -eq "inifilemanager"}
+    PS C:\> $ifm.GetMemberS() | where {$_.ispublic -AND ! $_.IsConstructor} | Select name
+
+    Name
+    ----
+    WriteValue
+    ReadValue
+    EnumSections
+    EnumValues
+    EnumValuesInf
+    WriteValueInf
+    DeleteSection
+    DeleteValue
+    DeleteValueInf
+    ReadValueInf
+    ToString
+    Equals
+    GetHashCode
+    GetType
+
+    This variable is provided as a reference.
+    
+    Of more value is the variable $gpoSDK. This a custom PowerShell object 
+    where each property is a hash table of enumerations from the GPAE .NET
+    classes. This is helpful when you need to know an enumeration value for
+    different types of GPO settings.
+
+    PS C:\> $gposdk.PropOp
+
+    Name                           Value
+    ----                           -----
+    PROPERTY_APPEND                3
+    PROPERTY_UPDATE                2
+    PROPERTY_CLEAR                 1
+    PROPERTY_DELETE                4
+
+    For GPO settings that need a Property operation, you can use the integer
+    value, the name or the variable reference such as 
+     
+     $gposdk.PropOp.Property_Delete
+    
+    If you would like to list all enumerations, you could use a command like
+    this:
+    
+      $sdmtype | where {$_.Isenum} | foreach { 
+         $_.name 
+         "-"*$($_.name.length)
+         $gposdk.$($_.name) | format-table -hidetableheaders  
+       }
+    
+    In order to work with a GPO, you most often need to know the path to a GPO
+    container or setting. You can manually explore a GPO object or you can use
+    the full path like User Configuration/Administrative Templates/System/. But
+    you may find it easier to search a variable with all the paths in a 
+    standard GPO. The variables `$gpComputerpath and `$gpUserPath contain full 
+    paths for the respective nodes of a typical Group Policy Object. They do
+    not take into account any GPO extensions or 3rd party add-ons that might
+    add new elements to a GPO.
+    
+    You can use these variables to find paths.
+
+    PS C:\> $gpuserpath | where {$_ -match "scripts"}
+    User Configuration/Administrative Templates/System/Scripts
+    User Configuration/Windows Settings/Scripts
+
+COMMANDS
+    All of the commands in this module should have complete help and examples.
+    The philosophy behind these commands is to achieve a goal, such as setting
+    a new GPO value in Administrative Templates through a series of steps. Many
+    of the commands are designed to use the pipeline, as you will see in the 
+    examples. But the goal is not to create a single one-line command to do it
+    all.
+    
+    Get-GPContainer
+    Get-GPItem
+    Get-GPSetting
+    Get-GPSettingProperty
+    Get-GPSettingPropertyType
+    Get-GPTree
+    Get-GPAEGPO
+    New-GPAdvancedGroupSetting
+    New-GPCommand
+    New-GPFunction
+    Remove-GPPreferenceSetting
+    Set-GPComputerScript
+    Set-GPDeployedPrinter
+    Set-GPDriveMapPreference
+    Set-GPFolderRedirection
+    Set-GPSettingProperty
+    Set-GPUserScript
+
+    Many of the commands, such as Get-GPItem, are considered foundational.
+    Some commands, like Set-GPComputerScript are intended to serve as a model
+    for something you might develop. You might also be able to use these tools
+    "as-is" in your environment, although everything should be tested in a non-
+    production environment   
+    
+SEE ALSO  
+    about_gpae_basics
+    about_gpae_new_gpcommand

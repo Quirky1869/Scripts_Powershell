@@ -1,0 +1,1 @@
+﻿Get-WmiObject -Class Win32_BIOS -Filter 'SerialNumber="S4DW2758"' | Select -Property PSComputerName

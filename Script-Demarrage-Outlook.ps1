@@ -1,0 +1,1 @@
+﻿Start-Process "\\srv-nas-info\users\MJacotet\MyPowershell\Messagerie Outlook.lnk"

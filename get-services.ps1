@@ -9,7 +9,7 @@ function avoirlesservices
  $Destination = (Get-ChildItem Env:\TEMP).value + "\Get-services.html"
 
 
- $Services =Get-Service | select name,status  | Sort-Object status -Descending | ConvertTo-Html -Fragment
+ $Services =Get-Service | select name,status  | Sort-Object status <# -Descending #> | ConvertTo-Html -Fragment
 
  $Css = "<style type='text/css'>
 
@@ -80,8 +80,6 @@ for(var i = 0; i < listeTD.length; i++)
   }
 }
 </script>"
-
-
  $Body = "<h3> HEURE </h3>" + "<div id='heure'>" + $Date + "</div>" + "<h3> Voici les services en cours et arreter sur votre ordinateur</h3>" + $Services + $javascript
 
 
@@ -104,7 +102,7 @@ ConvertTo-Html -Head $Head -Body $Body | Out-File -FilePath $($Destination)
 Invoke-Item -Path $($Destination)
 }
 
-<##===============================================================Call function=======================================================================##>
+<##===============================================================Appel de la fonction=======================================================================##>
 
 
 avoirlesservices

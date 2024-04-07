@@ -1,0 +1,1 @@
+﻿New-NetFirewallRule -DisplayName "ICMP Allow" -Protocol ICMPv4 -IcmpType 8 -Direction Inbound -Action Allow

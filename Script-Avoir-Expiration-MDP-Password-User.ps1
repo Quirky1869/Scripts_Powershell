@@ -1,0 +1,2 @@
+﻿$name = Read-Host "Nom Utilisateur"
+Get-ADUser -Identity $name -Properties "DisplayName", "msDS-UserPasswordExpiryTimeComputed" | Select-Object -Property "Displayname",@{Name="ExpiryDate";Expression={[datetime]::FromFileTime($_."msDS-UserPasswordExpiryTimeComputed")}}

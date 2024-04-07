@@ -1,0 +1,1 @@
+﻿Get-Service | Select-Object name,status |  where {$_.status -eq "stopped"} | ConvertTo-Html -Head " <h1> Alphormation </h1> " | out-file C:\Alphorm\HTML\exportsservices.html

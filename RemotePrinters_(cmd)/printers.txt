@@ -1,0 +1,24 @@
+AGasparoux: 
+\\printserv2\Lexmark - Secretariat DRH 
+\\printserv2\MFC Bureau INF Consult Ext 
+\\printserv2\SGAP - Guichet 9 
+\\printserv2\SHARP - Consultations Anesthesie 
+\\printserv2\SHARP - Consultations ORL 
+\\printserv2\SHARP - Ophtalmologie Hospitalisation Secretariat 
+\\Printserv2\SHARP MX-M264N PCL6 - DSI 
+\\printserv2\SHARP MX-M264N PCL6 - Ortho-Traumato 
+
+048516: 
+
+048710: 
+- \\Printserv2\SHARP MX-M264N PCL6 - DSI 
+
+Administrateur: 
+
+Administrateur.ALEX: 
+
+DefaultAppPool: 
+
+Local Printers:
+ZDesigner QL 220/QL 220 Plus                                     
+ 

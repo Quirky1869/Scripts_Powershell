@@ -1,0 +1,1 @@
+Set-Printer -Name "pdfcreator" -Shared $true -ShareName "test micka" -ComputerName "LT-MICKA"

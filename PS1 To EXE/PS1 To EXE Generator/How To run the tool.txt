@@ -1,0 +1,12 @@
+There are two ways to use the tool:
+
+1 / Run the EXE file
+	- The EXE file is located in the EXE folder
+	- Just double-click on the "PS1 To EXE Generator.exe" file
+
+2 / Run from the Sources
+	- Sources are located in the Sources folder
+	- The main PS1 file is "PS1ToEXE_Generator.ps1"
+	- Run the ps1 by typing "powershell .\PS1ToEXE_Generator.ps1"
+	- If you're using Windows 7, you may need to use the -sta switche like this "powershell -sta .\PS1ToEXE_Generator.ps1"
+	- The file "PS1ToEXE_Generator.xaml" is this one used to display the GUI

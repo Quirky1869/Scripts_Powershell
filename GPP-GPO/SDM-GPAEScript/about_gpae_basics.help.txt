@@ -1,0 +1,201 @@
+TOPIC
+    about_gpae_basics
+
+SHORT DESCRIPTION
+    Describes the basic concepts in using the GPAE PowerShell SDK.
+
+LONG DESCRIPTION
+    There are some basic guidelines you can follow when using the GPAE SDK to
+    automate Group Policy with Windows PowerShell. Let's walk through a few
+    basic steps. You are encouraged to look at help and examples for all the
+    commands shown. The commands should write objects to the pipeline, so be
+    sure to take advantage of Get-Member.
+    
+    The first step is almost always to create a GPO object.
+    
+    PS C:\> $gpo = Get-GPAEGPO MyTestGPO
+    PS C:\> $gpo 
+    
+    GPName                       : gpo://GLOBOMANTICS.LOCAL/MyTestGPO
+    UserName                     : 
+    Password                     : 
+    AuthEnum                     : None
+    OpenByName                   : True
+    CentralStore                 : 
+    Containers                   : {Computer Configuration, User Configuration}
+    GPCComputerVersion           : 26
+    GPCUserVersion               : 110
+    GPTComputerVersion           : 26
+    GPTUserVersion               : 110
+    Name                         : MyTestGPO
+    Guid                         : 9061E2E6-0385-436D-A17E-D1B2F41C6B08
+    DisableComputerConfiguration : False
+    DisableUserConfiguration     : False
+    Type                         : AD
+    ADRoot                       : System.DirectoryServices.DirectoryEntry
+    FSPath                       : \\CHI-DC01.GLOBOMANTICS.local\SYSVOL\GLOBOMA
+                                   NTICS.local\Policies\{9061E2E6-0385-436D-A17
+                                   E-D1B2F41C6B08}\
+    PolFileManager               : GPOSDK.Providers._Common.PolFileManager
+    AdmManager                   : GPOSDK.Providers._Common.AdmManager
+
+    Next, we can get a container. You can navigate through containers.
+    
+    PS C:\> $a = $gpo.containers[0].containers | where-object {$PSItem.name -eq "Windows Settings"}
+    PS C:\> $a
+
+    Name           : Windows Settings
+    Parent         : GPOSDK.GPContainerImpl
+    GPObject       : GPOSDK.GPObjectImpl
+    GPsPath        : \Computer Configuration\Windows Settings
+    Containers     : {Deployed Printers, Scripts, Security Settings}
+    Settings       : {}
+    Provider       :
+    GPO            : GPOSDK.GPObjectImpl
+    ExtensionGUIDs :
+
+    PS C:\> $gpo.containers[0] | get-gpcontainer -recurse |where {$_.name -eq "event log"}
+
+    Name           : Event Log
+    Parent         : GPOSDK.GPContainerImpl
+    GPObject       : GPOSDK.GPObjectImpl
+    GPsPath        : \Computer Configuration\Windows Settings\Security Set
+                     tings\Event Log
+    Containers     : {}
+    Settings       : {Prevent local guests group from accessing security l
+                     og, Prevent local guests group from accessing system 
+                     log, Prevent local guests group from accessing applic
+                     ation log, Retain security log...}
+    Provider       : GPOSDK.Providers.EventLogPolicyProvider
+    GPO            : GPOSDK.GPObjectImpl
+    ExtensionGUIDs : [{827D319E-6EAC-11D2-A4EA-00C04F79F83A}{803E14A0-B4FB
+                     -11D0-A0D0-00A0C90F574B}]
+
+    But the fastest way is to use the container path. You can get paths from
+    the $gpComputerPath and $gpUserPath variables.
+    
+    PS C:\> $p="\Computer Configuration\Windows Settings\Security Settings\Event Log"
+    PS C:\> $cont=Get-GPContainer -path $p -gpo $gpo
+    PS C:\> $cont
+
+    Name           : Event Log
+    Parent         : GPOSDK.GPContainerImpl
+    GPObject       : GPOSDK.GPObjectImpl
+    GPsPath        : \Computer Configuration\Windows Settings\Security Setti
+                     ngs\Event Log
+    Containers     : {}
+    Settings       : {Prevent local guests group from accessing security log
+                     , Prevent local guests group from accessing system log,
+                      Prevent local guests group from accessing application 
+                     log, Retain security log...}
+    Provider       : GPOSDK.Providers.EventLogPolicyProvider
+    GPO            : GPOSDK.GPObjectImpl
+    ExtensionGUIDs : [{827D319E-6EAC-11D2-A4EA-00C04F79F83A}{803E14A0-B4FB-1
+                     1D0-A0D0-00A0C90F574B}]
+
+    This container has settings. We can see them as an object property.
+    
+    PS C:\> $cont.Settings
+    
+    Name               GPsPath           Parent            Id               
+    ----               -------           ------            --               
+    Prevent local g... \Computer Conf... GPOSDK.GPConta...                  
+    Prevent local g... \Computer Conf... GPOSDK.GPConta...                  
+    Prevent local g... \Computer Conf... GPOSDK.GPConta...                  
+    Retain security... \Computer Conf... GPOSDK.GPConta...                  
+    Retain system log  \Computer Conf... GPOSDK.GPConta...                  
+    Retain applicat... \Computer Conf... GPOSDK.GPConta...                  
+    Maximum securit... \Computer Conf... GPOSDK.GPConta...                  
+    Maximum system ... \Computer Conf... GPOSDK.GPConta...                  
+    Maximum applica... \Computer Conf... GPOSDK.GPConta...                  
+    Retention metho... \Computer Conf... GPOSDK.GPConta...                  
+    Retention metho... \Computer Conf... GPOSDK.GPConta...                  
+    Retention metho... \Computer Conf... GPOSDK.GPConta...                  
+
+    Or we can use one of the SDK commands.
+
+    PS C:\> $cont | get-gpsetting | Select Name
+
+    Name
+    ----
+    Prevent local guests group from accessing security log
+    Prevent local guests group from accessing system log
+    Prevent local guests group from accessing application log
+    Retain security log
+    Retain system log
+    Retain application log
+    Maximum security log size
+    Maximum system log size
+    Maximum application log size
+    Retention method for security log
+    Retention method for system log
+    Retention method for application log
+
+    PS C:\> $cont | get-gpsetting -Name "Max*" | Select Name
+
+    Name
+    ----
+    Maximum security log size
+    Maximum system log size
+    Maximum application log size
+    
+    We can retrieve a single setting by name. Wildcards are permitted which is
+    useful since some setting names can be quite long.
+    
+    PS C:\> $setting=$cont | get-gpsetting -Name "Maximum sys*"
+    PS C:\> $setting
+
+    Name                     GPsPath                  Parent                 Id
+    ----                     -------                  ------                 --
+    Maximum system log size  \Computer Configurati... GPOSDK.GPContainerImpl    
+
+    Use Get-GPSettingProperty to retrieve the current settings.
+    
+    PS C:\> $setting | Get-GPSettingProperty
+
+                    Value                                           Defined
+                    -----                                           -------
+                     4096                                              True
+
+    To modify a setting use Set-GPSettingProperty. This command should work
+    with most Group Policy settings with the exception of preferences. You 
+    might be able to use the command to modify an existing preference but it
+    is a bit more difficult to create a new one.
+    
+    You can set a new value in one of two ways. You can either use an object
+    with matching property names or a hash table. Be very careful as GPO 
+    property names are case sensitive and may contain some special characters
+    like curly apostrophes. It is also assumed you know what type of values to
+    enter. In the case of this setting, the value is the size of the log in KB.
+    
+    We could change this setting like this:
+    
+    PS C:\> $new=$setting | Get-GPSettingProperty
+    PS C:\> $new.Value=2048
+    PS C:\> $setting | Set-GPSettingProperty -PropertyObject $new -whatif
+    What if: Performing operation "Set-GPSettingProperty" on Target "Defined".
+    What if: Performing operation "Set-GPSettingProperty" on Target "Value".
+    What if: Performing operation "Set-GPSettingProperty" on Target "Setting...
+    PS C:\> $setting | Set-GPSettingProperty -PropertyObject $new
+    PS C:\> $setting | Get-GPSettingProperty | format-list
+    
+    Value   : 2048
+    Defined : True
+
+    As you can see the command supports -Whatif. For properties with special
+    characters or spaces use tab completion to get the full name, then wrap it
+    in quotes.
+    
+    PS C:\> $obj.'This is a long property name'="foo"
+    
+    Or we can use a hash table. This approach is handy when you only need to 
+    change a few properties. But remember, the key name must match the property
+    name and it is case sensitive.
+    
+    PS C:\> $setting | Set-GPSettingProperty -PropertyTable @{Value=4096}
+    
+    Group Policy objects and settings are complicated and not entirely con-
+    sistent so expect a lot of trial and error with non-production GPOs.
+    
+SEE ALSO
+    about_gpae_sdk

@@ -1,0 +1,1 @@
+﻿REG add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows x64\Drivers\Version-3\TOSHIBA Universal Printer 2" /v InfPath /t REG_SZ /d C:\WINDOWS\System32\DriverStore\FileRepository\esf6u.inf_amd64_d14f6ddada81d8df\esf6u.inf /f

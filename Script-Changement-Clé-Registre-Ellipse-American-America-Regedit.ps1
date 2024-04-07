@@ -1,0 +1,1 @@
+﻿REG add "HKLM\SOFTWARE\Wow6432Node\Oracle\Key_OraClient11g_home1" /v NLS_LANG /t REG_SZ /d AMERICAN_AMERICA.WE8MSWIN1252 /f

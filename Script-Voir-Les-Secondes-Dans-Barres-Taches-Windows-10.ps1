@@ -1,0 +1,2 @@
+﻿### Voir les secondes dans la barres des tâches Windows 10 ###
+New-ItemProperty "hkcu:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\" -Name "ShowSecondsInSystemClock" -Value 1 -PropertyType "DWord"

@@ -1,18 +1,15 @@
 ﻿#=========================================================Remove Printer==========================================================#
 
-$destinationLog = (Get-ChildItem Env:\USERPROFILE).value + "\Log-info-printer\$($printer).log"
+$Destinationlog = (Get-ChildItem Env:\USERPROFILE).value + "\Log-info-printer\$($Printer).log"
 
-Start-Transcript -Path $destinationLog -Verbose -Append
 
-$pc = Read-Host "Enter computer name"
+Start-Transcript -Path $Destinationlog -Verbose -Append
 
-$printer = "  ####Enter server name HERE ####   ".ToUpper()
 
-$printer += Read-Host "Enter the printer name to delete".ToUpper()
+$Printer = Read-Host "Entrez le nom de l'imprimante à supprimer"
 
-Write-Host $printer
 
-Remove-Printer -Name $printer -ComputerName $pc
+Remove-Printer -Name $($Printer)
 
 
 Stop-Transcript

@@ -1,0 +1,1 @@
+﻿[datetime]::FromFileTime((Get-ADUser -Identity "048710" -Properties "msDS-UserPasswordExpiryTimeComputed")."msDS-UserPasswordExpiryTimeComputed")

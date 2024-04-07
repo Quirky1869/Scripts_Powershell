@@ -1,0 +1,1 @@
+﻿Get-Content -Path "C:\users\048710\desktop\numserie1.csv"| ForEach-Object {$_ -replace "\s+","" } #| Out-File -FilePath "C:\users\048710\desktop\numserienospace.csv"

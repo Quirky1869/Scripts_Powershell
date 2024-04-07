@@ -1,0 +1,1 @@
+﻿Get-ADUser -Filter * -SearchBase "OU=Agents,OU=Users,OU=CHA,DC=adcha,DC=local" -Properties * | Where-Object {$_.enabled -eq 'true'} | select samaccountname | Out-File -FilePath "C:\Users\048710\desktop\agents.txt"
